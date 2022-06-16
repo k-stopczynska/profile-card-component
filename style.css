@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Dark-cyan);
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: -47rem -37rem, 10rem 17rem;
+    height: 100vh;
+    width: 100vw;
+}
+.wrapper {
+    background: hsl(0, 0%, 100%);
+    height: 22rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px transparent;
+    border-radius: 13px;
+}
+.coloured-background {
+    background-image: url(./images/bg-pattern-card.svg);
+    width: 100%;
+    height: 8.5rem;
+    border: 1px transparent;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    z-index: 1;
+}
+img {
+    z-index: 1000;
+    border: 5px solid hsl(0, 0%, 100%);
+    border-radius: 90%;
+    position: absolute;
+    top: 15rem;
+    width: 6rem;
+    height: 6rem;
+}
+.about-author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+h1,
+.followers :nth-child(1),
+.likes :nth-child(1),
+.photos :nth-child(1) {
+    font-size: 18px;
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: 700;
+}
+span,
+.followers :nth-child(2),
+.likes :nth-child(2),
+.photos :nth-child(2),
+.about-author :nth-child(2) {
+    color: var(--Dark-grayish-blue);
+    font-weight: 400;
+}
+span {
+    padding-left: .6rem;
+}
+.about-author :nth-child(2) {
+    font-size: 12px;
+    line-height: 2rem;
+}
+.stats {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.3rem 0;
+    width: 100%;
+    border-top: 1px solid hsla(0, 0%, 59%, .3);
+    margin-top: 1rem;
+}
+.stats > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.followers :nth-child(2),
+.likes :nth-child(2),
+.photos :nth-child(2) {
+    font-size: 10px;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+@media (min-width: 800px) {
+    body {
+        background-position: -15rem -34rem, 45rem 23rem;
+    }
+    img {
+        top: 17.5rem;
+    }
+}
