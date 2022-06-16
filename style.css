@@ -43,12 +43,12 @@ body {
     border-top-right-radius: 13px;
     z-index: 1;
 }
-img {
+.wrapper > img {
     z-index: 1000;
     border: 5px solid hsl(0, 0%, 100%);
     border-radius: 90%;
     position: absolute;
-    top: 15rem;
+    top: 37%;
     width: 6rem;
     height: 6rem;
 }
@@ -110,7 +110,7 @@ span {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
-@media (min-width: 800px) {
+@media (min-width: 1200px) {
     body {
         background-position: -15rem -34rem, 45rem 23rem;
     }
