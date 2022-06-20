@@ -103,6 +103,11 @@ span {
     letter-spacing: 1px;
     line-height: 1.5rem;
 }
+footer {
+    position: fixed;
+    bottom: 10px;
+    height: 15px;
+}
 .attribution { 
     font-size: 11px; 
     text-align: center; 
